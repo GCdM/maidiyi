@@ -8,8 +8,7 @@ vim.opt.cursorline = true
 
 vim.opt.scrolloff = 8
 vim.opt.showmode = false
-vim.opt.wrap = true
-vim.opt.breakindent = true
+vim.opt.wrap = false
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
