@@ -27,16 +27,16 @@ vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
 
-require 'config.vim'
-require 'config.keymaps'
-require 'config.autocommands'
-require 'config.lazy'
+require('config.vim')
+require('config.keymaps')
+require('config.autocommands')
 
+require('config.lazy')
 require('lazy').setup({
   import = 'plugins',
-  install = { colorscheme = { 'tokyonight' } },
-  -- { colorscheme = { 'tokyonight-moon' },
 }, {
+  install = { colorscheme = { 'tokyonight-moon' } },
+
   --[[ 
 
   ui = {
