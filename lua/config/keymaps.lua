@@ -6,7 +6,8 @@
 local map = vim.keymap.set
 
 map({ 'i', 'x', 'n', 's' }, '<C-s>', '<cmd>w<cr><esc>', { desc = 'Save File' })
-map('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' })
+map('n', '<leader>Q', '<cmd>qa<cr>', { desc = 'Quit All' })
+map('n', '<leader>D', '<cmd>:bd<cr>', { desc = '[D]rop buffer & window' })
 map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 map('n', '<Esc>', '<cmd>nohlsearch<CR>') -- Clear highlights on search when pressing <Esc> in normal mode
 
@@ -37,7 +38,6 @@ map('v', '<A-k>', ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", {
 -- Manage buffers
 map('n', '<S-h>', '<cmd>bprevious<cr>', { desc = 'Select previous buffer' })
 map('n', '<S-l>', '<cmd>bnext<cr>', { desc = 'Select next buffer' })
-map('n', '<leader>bD', '<cmd>:bd<cr>', { desc = '[B]uffer [D]rop (incl. window)' })
 -- map("n", "<leader>bd", function()
 --   Snacks.bufdelete()
 -- end, { desc = "[B]uffer [D]rop" })
@@ -69,7 +69,7 @@ local go_to_diagnostic = function(next, severity)
     go { severity = severity }
   end
 end
-map('n', '<leader>dq', vim.diagnostic.setloclist, { desc = '[D]ocument [Q]uickfix list' })
+map('n', '<leader>fq', vim.diagnostic.setloclist, { desc = '[F]ile [Q]uickfix list' })
 map('n', '<leader>cd', vim.diagnostic.open_float, { desc = '[C]ode line [D]iagnostics' })
 map('n', ']d', go_to_diagnostic(true), { desc = 'Next Diagnostic' })
 map('n', '[d', go_to_diagnostic(false), { desc = 'Prev Diagnostic' })

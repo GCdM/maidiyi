@@ -1,7 +1,5 @@
 return {
-
   -- Colourschemes
-
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
@@ -19,7 +17,7 @@ return {
       vim.cmd.hi 'Comment gui=none'
     end,
   },
-  { 'rebelot/kanagawa.nvim', lazy = true },
+  { 'rebelot/kanagawa.nvim' },
 
   -- Useful for getting pretty icons, but requires a Nerd Font.
   { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
