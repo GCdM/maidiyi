@@ -22,5 +22,8 @@ return {
         never_show = { '.git' },
       },
     },
+    default_component_configs = {
+      type = { enabled = false },
+    },
   },
 }
