@@ -28,7 +28,7 @@ vim.opt.smartcase = true
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '  ', trail = '·', nbsp = '␣' }
 
 -- TODO: Set up partial integration with OS clipboard
 -- Sync clipboard between OS and Neovim.
