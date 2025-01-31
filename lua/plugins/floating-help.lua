@@ -1,6 +1,6 @@
 return {
   'Tyler-Barham/floating-help.nvim',
-  lazy = true,
+  lazy = false,
   opts = {},
   keys = {
     {
@@ -11,7 +11,6 @@ return {
       desc = 'Toggle Floating[*H*]elp window',
     },
   },
-
   config = function()
     -- Only replace cmds, not search; only replace the first instance
     local function cmd_abbrev(abbrev, expansion)

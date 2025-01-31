@@ -35,6 +35,10 @@ map('n', '<C-Right>', '<cmd>vertical resize +2<cr>', { desc = 'Increase Window W
 -- map('v', '<A-j>', ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = 'Move Down' })
 -- map('v', '<A-k>', ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = 'Move Up' })
 
+-- Copy lines
+map('n', '<C-S-j>', 'yyp', { desc = 'Copy line down' })
+map('n', '<C-S-k>', 'yyP', { desc = 'Copy line up' })
+
 -- Manage buffers
 map('n', '<S-h>', '<cmd>bprevious<cr>', { desc = 'Select previous buffer' })
 map('n', '<S-l>', '<cmd>bnext<cr>', { desc = 'Select next buffer' })

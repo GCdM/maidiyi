@@ -56,6 +56,7 @@ return {
         { '<leader>r', group = '[R]ename' },
         { '<leader>s', group = '[S]earch' },
         { '<leader>t', group = '[T]oggle' },
+        { '<leader>u', group = '[U]I' },
         { '<leader>w', group = '[W]indow' },
       },
     },

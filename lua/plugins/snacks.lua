@@ -6,6 +6,10 @@ return {
     -- animate = { enabled = true },
     bufdelete = { enabled = true },
     git = { enabled = true },
+    indent = {
+      enabled = true,
+      indent = { only_scope = true, only_current = true },
+    },
     input = { enabled = true },
     notifier = { enabled = true },
     notify = { enabled = true },
@@ -17,7 +21,6 @@ return {
     -- refer to the configuration section below
     -- bigfile = { enabled = true },
     -- dashboard = { enabled = true },
-    -- indent = { enabled = true },
     -- input = { enabled = true },
     -- picker = { enabled = true },
     -- quickfile = { enabled = true },
