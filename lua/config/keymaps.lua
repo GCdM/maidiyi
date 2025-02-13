@@ -35,6 +35,10 @@ map('n', '<C-Right>', '<cmd>vertical resize +2<cr>', { desc = 'Increase Window W
 -- map('v', '<A-j>', ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = 'Move Down' })
 -- map('v', '<A-k>', ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = 'Move Up' })
 
+-- Create empty lines
+map('n', '<A-o>', 'm`o<esc>``', { desc = 'Add empty line below' })
+map('n', '<A-O>', 'm`O<esc>``', { desc = 'Add empty line above' })
+
 -- Copy lines
 map('n', '<C-S-j>', 'yyp', { desc = 'Copy line down' })
 map('n', '<C-S-k>', 'yyP', { desc = 'Copy line up' })
