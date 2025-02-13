@@ -15,8 +15,8 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
-vim.opt.swapfile = true
-vim.opt.updatetime = 250
+vim.opt.swapfile = false
+-- vim.opt.updatetime = 250
 vim.opt.undofile = true
 vim.opt.undodir = os.getenv('HOME') .. '/.vim/backup'
 vim.opt.backupdir = os.getenv('HOME') .. '/.vim/undo'
