@@ -38,11 +38,11 @@ return {
       mode = { 'n', 'v' },
     },
     {
-      '<leader>S',
+      '<leader>bs',
       function()
         Snacks.scratch()
       end,
-      desc = 'Toggle [S]cratch buffer',
+      desc = '[B]uffer [S]cratch',
     },
     {
       '<leader>nh',
