@@ -2,6 +2,7 @@ return {
   {
     'akinsho/toggleterm.nvim',
     version = '*',
+    lazy = false,
     opts = {
       open_mapping = '<C-/>',
       direction = 'vertical',
@@ -12,6 +13,9 @@ return {
           return vim.o.columns * 0.4
         end
       end,
+    },
+    keys = {
+      { 'C-S-/', '<cmd>ToggleTermOpenAll<cr>', desc = 'Open all terminals' },
     },
   },
 }
