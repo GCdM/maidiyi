@@ -59,6 +59,21 @@ return {
       desc = '[B]uffer [D]elete',
     },
     {
+      '<leader>bo',
+      function()
+        Snacks.bufdelete.other()
+      end,
+      desc = '[B]uffer delete [O]thers',
+    },
+    {
+      '<leader>bD',
+      function()
+        Snacks.bufdelete.all()
+        vim.cmd('Neotree reveal position=current')
+      end,
+      desc = '[B]uffer delete [A]ll',
+    },
+    {
       '<leader>cR',
       function()
         Snacks.rename.rename_file()

@@ -15,6 +15,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+vim.opt.hidden = false
 vim.opt.swapfile = false
 -- vim.opt.updatetime = 250
 vim.opt.undofile = true
