@@ -40,8 +40,8 @@ map('n', '<A-o>', 'm`o<esc>``', { desc = 'Add empty line below' })
 map('n', '<A-O>', 'm`O<esc>``', { desc = 'Add empty line above' })
 
 -- Copy lines
-map('n', '<C-S-j>', 'yyp', { desc = 'Copy line down' })
-map('n', '<C-S-k>', 'yyP', { desc = 'Copy line up' })
+map('n', '<A-S-j>', 'yyp', { desc = 'Copy line down' })
+map('n', '<A-S-k>', 'yyP', { desc = 'Copy line up' })
 
 -- Manage buffers
 map('n', '<S-h>', '<cmd>bprevious<cr>', { desc = 'Select previous buffer' })
@@ -86,5 +86,4 @@ map('n', '[e', go_to_diagnostic(false, 'ERROR'), { desc = 'Prev Error' })
 map('n', ']w', go_to_diagnostic(true, 'WARN'), { desc = 'Next Warning' })
 map('n', '[w', go_to_diagnostic(false, 'WARN'), { desc = 'Prev Warning' })
 
--- TODO: Lazy
--- map("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "[L]azy" })
+map('n', '<leader>L', '<cmd>Lazy<cr>', { desc = '[L]azy' })

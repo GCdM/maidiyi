@@ -68,8 +68,8 @@ return {
     {
       '<leader>bD',
       function()
-        Snacks.bufdelete.all()
         vim.cmd('Neotree reveal position=current')
+        Snacks.bufdelete.all()
       end,
       desc = '[B]uffer delete [A]ll',
     },
