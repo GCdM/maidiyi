@@ -87,3 +87,6 @@ map('n', ']w', go_to_diagnostic(true, 'WARN'), { desc = 'Next Warning' })
 map('n', '[w', go_to_diagnostic(false, 'WARN'), { desc = 'Prev Warning' })
 
 map('n', '<leader>L', '<cmd>Lazy<cr>', { desc = '[L]azy' })
+
+-- TODO: Add `gX` keymap to open incognito
+--       OR update `gx` to add browser options --private-window

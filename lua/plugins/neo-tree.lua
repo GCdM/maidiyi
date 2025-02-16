@@ -10,6 +10,7 @@ return {
   cmd = 'Neotree',
   keys = {
     { '\\', '<cmd>Neotree reveal<cr>', desc = 'NeoTree', silent = true },
+    { '|', '<cmd>Neotree close<cr>' },
   },
   opts = {
     filesystem = {
