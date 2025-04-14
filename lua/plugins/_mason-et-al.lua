@@ -170,7 +170,7 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        ts_ls = {},
+        -- ts_ls = {},
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
@@ -255,7 +255,7 @@ return {
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         typescript = { 'prettierd', 'prettier', stop_after_first = true },
 
-        markdown = { 'markdownlint', 'mdslw' },
+        markdown = { 'markdownlint' },
       },
     },
   },
@@ -384,4 +384,9 @@ return {
   --   main = 'ibl',
   --   opts = {},
   -- },
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    opts = {},
+  },
 }
