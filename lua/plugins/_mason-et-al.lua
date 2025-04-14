@@ -165,7 +165,8 @@ return {
             },
           },
         },
-        --
+        marksman = {},
+
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
@@ -255,7 +256,7 @@ return {
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         typescript = { 'prettierd', 'prettier', stop_after_first = true },
 
-        markdown = { 'markdownlint' },
+        markdown = { 'prettierd', 'markdownlint-cli2' },
       },
     },
   },
