@@ -1,0 +1,3 @@
+- [ ] Update telescope `<leader>sh` to open with FloatingHelp plugin
+- [ ] Get rid of '[No name]' buffers
+- [ ] Add Telescope search for TODO comments
