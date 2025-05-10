@@ -159,12 +159,12 @@ return {
         jsonlint = {},
         luacheck = {},
         marksman = {},
+        ['markdownlint-cli2'] = {},
         prettierd = {},
         shellcheck = {},
         shfmt = {},
         stylua = {},
         taplo = {},
-        vale = {},
         yamlls = {},
         lua_ls = {
           -- cmd = { ... },
