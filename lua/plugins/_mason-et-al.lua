@@ -151,6 +151,21 @@ return {
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
+        bashls = {},
+        cssls = {},
+        eslint = {},
+        hyprls = {},
+        jsonls = {},
+        jsonlint = {},
+        luacheck = {},
+        marksman = {},
+        prettierd = {},
+        shellcheck = {},
+        shfmt = {},
+        stylua = {},
+        taplo = {},
+        vale = {},
+        yamlls = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -165,7 +180,6 @@ return {
             },
           },
         },
-        marksman = {},
 
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
@@ -256,7 +270,7 @@ return {
         javascript = { 'prettierd' },
         typescript = { 'prettierd' },
 
-        -- markdown = { 'prettierd', 'markdownlint-cli2' },
+        markdown = { 'prettierd' },
       },
     },
   },
