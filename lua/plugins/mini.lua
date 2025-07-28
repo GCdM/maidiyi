@@ -29,7 +29,27 @@ return {
       --  and try some other statusline plugin
       local statusline = require('mini.statusline')
       -- set use_icons to true if you have a Nerd Font
-      statusline.setup({ use_icons = vim.g.have_nerd_font })
+      statusline.setup({
+        use_icons = vim.g.have_nerd_font,
+        content = {
+          active = function()
+            local mode, mode_hl = MiniStatusline.section_mode({ trunc_width = 120 })
+            local filename = MiniStatusline.section_filename({ trunc_width = 140 })
+            local filetype = MiniStatusline.section_fileinfo({ trunc_width = 120 })
+            local cursor_position = MiniStatusline.section_location({ trunc_width = 75 })
+            local search = MiniStatusline.section_searchcount({ trunc_width = 75 })
+
+            return MiniStatusline.combine_groups({
+              { hl = mode_hl, strings = { mode } },
+              '%<', -- Mark general truncate point
+              { hl = 'MiniStatuslineFilename', strings = { filename } },
+              '%=', -- End left alignment
+              { hl = 'MiniStatuslineFiletype', strings = { filetype } },
+              { hl = mode_hl, strings = { cursor_position, search } },
+            })
+          end,
+        },
+      })
 
       -- You can configure sections in the statusline by overriding their
       -- default behavior. For example, here we set the section for
