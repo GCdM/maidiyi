@@ -7,9 +7,9 @@ return {
     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
     'MunifTanjim/nui.nvim',
   },
-  cmd = 'Neotree',
+  cmd = 'Neotree position=right',
   keys = {
-    { '\\', '<cmd>Neotree reveal<cr>', desc = 'NeoTree', silent = true },
+    { '\\', '<cmd>Neotree reveal position=right<cr>', desc = 'NeoTree', silent = true },
     { '|', '<cmd>Neotree close<cr>' },
   },
   opts = {
@@ -17,6 +17,7 @@ return {
       hijack_netrw_behavior = 'open_current',
       window = {
         mappings = { ['\\'] = 'close_window' },
+        width = 100,
       },
       filtered_items = {
         visible = true,
