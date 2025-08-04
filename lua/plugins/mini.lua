@@ -35,7 +35,12 @@ return {
           active = function()
             local mode, mode_hl = MiniStatusline.section_mode({ trunc_width = 120 })
             local filename = MiniStatusline.section_filename({ trunc_width = 140 })
-            local filetype = MiniStatusline.section_fileinfo({ trunc_width = 120 })
+            local filetype = MiniStatusline.section_fileinfo({
+              trunc_width = 120,
+              content = function()
+                return '%t' -- This will only show the filetype
+              end,
+            })
             local cursor_position = MiniStatusline.section_location({ trunc_width = 75 })
             local search = MiniStatusline.section_searchcount({ trunc_width = 75 })
 
