@@ -15,7 +15,7 @@ return {
       end,
     },
     keys = {
-      { 'C-S-/', '<cmd>ToggleTermOpenAll<cr>', desc = 'Open all terminals' },
+      { '<C-S-/>', '<cmd>ToggleTerm<cr>', desc = 'Open terminal', mode = { 'n', 'i', 'v', 't' } },
     },
   },
 }
