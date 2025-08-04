@@ -13,6 +13,7 @@ return {
     input = { enabled = true },
     notifier = { enabled = true },
     notify = { enabled = true },
+    scratch = { enabled = true, win = { style = { height = 50, width = 200 } } },
     scope = { enabled = true },
     toggle = { enabled = true },
     utils = { enabled = true },
