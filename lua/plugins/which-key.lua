@@ -48,6 +48,7 @@ return {
         { '<leader>a', group = '[A]vante' },
         { '<leader>b', group = '[B]uffer' },
         { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
+        { '<leader>d', group = '[D]ebug' },
         { '<leader>f', group = '[F]ile' },
         { '<leader>g', group = '[G]it' },
         { '<leader>h', group = '[H]unk (git)', mode = { 'n', 'v' } },
