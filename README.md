@@ -5,5 +5,12 @@ Personal Neovim setup.
 > [!tip]
 > Pronounced /maɪ diː iː/ (_or "m'IDE"_).
 
-> [!note] 
+> [!note]
 > Built from [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
+
+## Requires
+
+- neovim >= 10.0.0
+- ripgrep
+- go
+- luarocks
