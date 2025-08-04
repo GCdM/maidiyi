@@ -1,12 +1,12 @@
 return {
   -- Colourschemes
   { 'folke/tokyonight.nvim' },
-  { 'rebelot/kanagawa.nvim' },
+  { 'thesimonho/kanagawa-paper.nvim' },
   {
-    'thesimonho/kanagawa-paper.nvim',
+    'rebelot/kanagawa.nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme('kanagawa-paper-ink')
+      vim.cmd.colorscheme('kanagawa')
     end,
   },
   -- Useful for getting pretty icons, but requires a Nerd Font.
