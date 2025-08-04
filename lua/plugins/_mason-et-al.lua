@@ -160,7 +160,7 @@ return {
         luacheck = {},
         marksman = {},
         ['markdownlint-cli2'] = {},
-        prettierd = {},
+        -- prettierd = {},
         shellcheck = {},
         shfmt = {},
         stylua = {},
@@ -267,10 +267,11 @@ return {
         -- python = { "isort", "black" },
 
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        javascript = { 'prettierd' },
-        typescript = { 'prettierd' },
+        javascript = { 'biome' },
+        typescript = { 'biome' },
+        typescriptreact = { 'biome' },
 
-        markdown = { 'prettierd' },
+        markdown = { 'biome' },
       },
     },
   },
@@ -407,6 +408,9 @@ return {
         tsserver_format_options = {
           tabSize = 2,
           convertTabToSpaces = true,
+        },
+        tsserver_plugins = {
+          '@styled/typescript-styled-plugin',
         },
       },
     },
