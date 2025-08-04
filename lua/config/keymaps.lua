@@ -25,7 +25,9 @@ map('n', '<leader>wd', '<C-W>c', { desc = '[W]indow [D]rop', remap = true })
 map('n', '<C-Up>', '<cmd>resize +2<cr>', { desc = 'Increase Window Height' })
 map('n', '<C-Down>', '<cmd>resize -2<cr>', { desc = 'Decrease Window Height' })
 map('n', '<C-Left>', '<cmd>vertical resize -2<cr>', { desc = 'Decrease Window Width' })
+map('n', '<C-S-Left>', '<cmd>vertical resize -5<cr>', { desc = 'Decrease Window Width' })
 map('n', '<C-Right>', '<cmd>vertical resize +2<cr>', { desc = 'Increase Window Width' })
+map('n', '<C-S-Right>', '<cmd>vertical resize +5<cr>', { desc = 'Increase Window Width' })
 
 -- -- Move Lines _replaced with `mini.move`_
 -- map('n', '<A-j>', "<cmd>execute 'move .+' . v:count1<cr>==", { desc = 'Move Down' })
